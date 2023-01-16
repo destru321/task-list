@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="justify-between"></div>
+    <div id="app">
+      <div class="flex flex-col items-center">
+        <div class="wrapper w-5/6 sm:w-[640px]">
+          <h1 class="text-center text-3xl my-5">
+            Task List
+          </h1>
+          <div class="flex justify-center">
+            <input type="text" class="border-2 border-black rounded-lg text-center bg-transparent taskName" placeholder="Wprowadz taska">
+            <button class="ml-3 addBtn" type="button">Add</button>
+          </div>
+          <h2 class="text-center mt-5 hidden alert">Istnieje juz taki task</h2>
+          <div class="flex justify-center mt-10">
+            <div class="tasks w-5/6"></div>
+          </div>
+        </div>
+        <div class="flex justify-center sm:w-[640px]">
+          <div class="w-5/6 hidden flex items-center fullName flex-col">
+            <h2 class="text-xl fullNameText break-words whitespace-normal w-full text-center"></h2>
+            <p class="text-2xl closeBtn">x</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
